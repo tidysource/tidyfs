@@ -1,0 +1,2 @@
+# tidyfs
+Promisify node fs
