@@ -2,7 +2,7 @@
 
 var fs = require('fs');
 
-var writeFile = function writeFile(filePath, content, options,){
+var writeFile = function writeFile(filePath, content, options){
 	return new Promise(function(resolve, reject){
 		fs.writeFile(
 					filePath,
