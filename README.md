@@ -10,3 +10,19 @@ readFile ---> readFile
 rmdir ---> rmDir
 unlink ---> rmFile
 stat ---> stat
+
+## Example usage
+```javascript
+var fs = require('tidyfs');
+
+fs.mkDir('./hello')
+	.then(function(){
+		console.log('Created directory with name hello.');
+	})
+	.catch(function(err){
+		console.log(err)
+	});
+```
+
+## Helpful resources
+Read more on JS promises: https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Promise
