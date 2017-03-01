@@ -1,9 +1,9 @@
 module.exports = {
-	stat : require('./stat.js'),
 	mkDir : require('./mkdir.js'),
 	mkFile : require('./mkFile.js'),
-	readFile : require('./readFile.js'),
 	readDir : require('./readDir.js'),
-	rmFile : require('./rmFile.js'),
-	rmDir : require('./rmDir.js')
+	readFile : require('./readFile.js'),
+	stat : require('./stat.js'),
+	rmDir : require('./rmDir.js'),
+	rmFile : require('./rmFile.js')
 };
