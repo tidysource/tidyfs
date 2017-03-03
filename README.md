@@ -16,7 +16,11 @@ Summary of changes:
 - `rmdir` ---> `rmDir`
 - `unlink` ---> `rmFile`
 - `stat` ---> `stat`
+
 ## Example usage
+Note: all parameters and returning values (passed to promise 
+success) are the same as with the [native nodeJS fs module][1].
+[1]: https://nodejs.org/api/fs.html
 
 ### Include module
 
