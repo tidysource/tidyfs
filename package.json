@@ -1,0 +1,32 @@
+{
+  "name": "tidyfs",
+  "version": "1.0.0",
+  "description": "Improved usability of node fs module (async)",
+  "main": "index.js",
+  "scripts": {
+    "test": "tape test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tidysource/tidyfs.git"
+  },
+  "keywords": [
+    "fs",
+    "file",
+    "file-system",
+    "node",
+    "nodejs",
+    "promises",
+    "async"
+  ],
+  "author": "Tidy Source (Daniel Cobo)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tidysource/tidyfs/issues"
+  },
+  "homepage": "https://github.com/tidysource/tidyfs#readme",
+  "devDependencies": {
+    "tap-colorize": "^1.2.0",
+    "tape": "^4.6.3"
+  }
+}
