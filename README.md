@@ -34,7 +34,6 @@ success) are the same as with the [native nodeJS fs module][1].
 [1]: https://nodejs.org/api/fs.html
 
 ### Include module
-
 First you should require the module. 
 
 ```javascript
