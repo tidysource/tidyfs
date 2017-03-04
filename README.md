@@ -138,7 +138,7 @@ Returns a promise.
 var fs = require('tidyfs');
 
 //Remove 'hello' directory
-fs.rmDir('./hello)
+fs.rmDir('./hello')
 	.then(function(){
 		console.log('Removed hello folder');
 	})
