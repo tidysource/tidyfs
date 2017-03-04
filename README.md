@@ -6,6 +6,17 @@ Improve naming. This is done by adding camel-case for readability and improving 
 
 ## How to use
 
+### Prerequisite
+
+#### Promises
+You should know how to use JS promises.
+To get started, here's a few helpful links:
+- https://developers.google.com/web/fundamentals/getting-started/primers/promises
+- https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Promise
+
+#### Node JS
+https://nodejs.org/
+
 ### Overview
 The fs module functions are renamed to be more consistent.
 Summary of changes:
@@ -164,9 +175,3 @@ fs.rmFile('./hello.txt')
 		console.log(err)
 	});
 ```
-
-## Prerequisite
-You should know how to use JS promises.
-To get started, here's a few helpful links:
-- https://developers.google.com/web/fundamentals/getting-started/primers/promises
-- https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Promise
