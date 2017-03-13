@@ -27,11 +27,12 @@ Summary of changes:
 - `rmdir` ---> `rmDir`
 - `unlink` ---> `rmFile`
 - `stat` ---> `stat`
+- `access` ---> `access`
 
 ## Example usage
 Note: all parameters and returning values (passed to promise 
 success) are the same as with the [native nodeJS fs module][1].
-[1]: https://nodejs.org/api/fs.html
+
 
 ### Include module
 First you should require the module. 
@@ -139,6 +140,33 @@ fs.stat('./hello')
 	});
 ```
 
+### access
+Returns an error if file does not exists, 
+otherwise a resolved promise. For rwx
+permission check see [nodeJS docs][1].
+
+```javascript
+//Include module
+var fs = require('tidyfs');
+
+fs.access('./hello/world.txt')
+	.then(function(){
+		assert.ok(true, 
+		'./hello/world.txt exists');
+	}) 
+	.catch(function(err){
+		assert.fail(err);
+	});
+	
+fs.access('.hello/world/foo/bar.txt')
+	.then(function(){
+		assert.fail('.hello/world/foo/bar.txt does not exists');
+	}) 
+	.catch(function(err){
+		assert.ok(true, '.hello/world/foo/bar.txt does not exists');
+	});
+```
+
 ### rmDir
 Remove a directory. 
 Returns a promise.
@@ -174,3 +202,5 @@ fs.rmFile('./hello.txt')
 		console.log(err)
 	});
 ```
+
+[1]: https://nodejs.org/api/fs.html

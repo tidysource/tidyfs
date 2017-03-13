@@ -100,6 +100,27 @@ test('stat()', function(assert){
 		});
 });
 
+test('access()', function(assert){
+	assert.plan(2);
+	
+	fs.access('./hello/world.txt')
+		.then(function(){
+			assert.ok(true, 
+			'./hello/world.txt exists');
+		}) 
+		.catch(function(err){
+			assert.fail(err);
+		});
+		
+	fs.access('.hello/world/foo/bar.txt')
+		.then(function(){
+			assert.fail('.hello/world/foo/bar.txt does not exists');
+		}) 
+		.catch(function(err){
+			assert.ok(true, '.hello/world/foo/bar.txt does not exists');
+		});
+});
+
 test('rmFile()', function(assert){
 	assert.plan(1);
 	
