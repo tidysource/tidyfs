@@ -1,6 +1,6 @@
 {
   "name": "tidyfs",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "Improved usability of node fs module (async)",
   "main": "index.js",
   "scripts": {
