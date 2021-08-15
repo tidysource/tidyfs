@@ -1,6 +1,6 @@
 # tidyfs
 
-__NOT activeely maintained__
+__NOT actively maintained__
 If you just want promisified native fs use:
 
 ```javascript
