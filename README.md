@@ -9,7 +9,7 @@ const fs = require('fs').promises;
 
 To handle files and folders in a more intuitive way overall use [@danielcobo/fs](https://github.com/danielcobo/fs)
 
-```javascript
+```console
 npm install @danielcobo/fs
 ```
 
