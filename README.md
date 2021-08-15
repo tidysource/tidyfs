@@ -1,5 +1,18 @@
 # tidyfs
 
+__NOT activeely maintained__
+If you just want promisified native fs use:
+
+```javascript
+const fs = require('fs').promises;
+```
+
+To handle files and folders in a more intuitive way overall use [@danielcobo/fs](https://github.com/danielcobo/fs)
+
+```javascript
+npm install @danielcobo/fs
+```
+
 ## Objectives
 Promisify node's native fs module (see https://nodejs.org/api/fs.html).
 Improve naming. This is done by adding camel-case for readability and improving consistency.
